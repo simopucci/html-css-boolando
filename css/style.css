@@ -21,7 +21,9 @@ a {
 .header-container {
     height: 80px;
     background-color: #FF6900;
-    box-shadow: 2px 0 5px black
+    box-shadow: 2px 0 5px black;
+    position: sticky;
+    top: 0;
 }
 
 .header-container .header__nav {
@@ -53,4 +55,75 @@ a {
 .header__profile {
     text-align: right;
     word-spacing: 10px;
+}
+
+
+/* MAIN */
+
+.main-container {
+    max-width: 70%;
+    margin: 80px auto;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: calc(100% / 3 - 23px);
+    min-height: 650px;
+    min-width: 380px;
+    margin-bottom: 80px;
+}
+
+.card img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover img {
+    display: block;
+}
+
+.card__1 {
+    background-image: url(../img/1.webp);
+    background-size: cover;
+}
+
+.card__2 {
+    background-image: url(../img/2.webp);
+    background-size: cover;
+}
+
+.card__3 {
+    background-image: url(../img/3.webp);
+    background-size: cover;
+}
+
+.card__4 {
+    background-image: url(../img/4.webp);
+    background-size: cover;
+}
+
+.card__5 {
+    background-image: url(../img/5.webp);
+    background-size: cover;
+}
+
+.card__6 {
+    background-image: url(../img/6.webp);
+    background-size: cover;
+}
+
+
+
+
+/* FOOTER */
+
+.footer-container {
+    height: 100px;
 }
