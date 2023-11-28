@@ -24,6 +24,7 @@ a {
     box-shadow: 2px 0 5px black;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .header-container .header__nav {
@@ -73,53 +74,28 @@ a {
 }
 
 .card {
-    width: calc(100% / 3 - 23px);
+    width: calc((100% / 3) - 20px);
     min-height: 650px;
-    min-width: 380px;
+    min-width: 370px;
     margin-bottom: 80px;
+    position: relative;
 }
 
 .card img {
-    display: none;
     width: 100%;
     height: 100%;
 }
 
-.card:hover img {
+.product__2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card:hover .product__2 {
     display: block;
 }
-
-.card__1 {
-    background-image: url(../img/1.webp);
-    background-size: cover;
-}
-
-.card__2 {
-    background-image: url(../img/2.webp);
-    background-size: cover;
-}
-
-.card__3 {
-    background-image: url(../img/3.webp);
-    background-size: cover;
-}
-
-.card__4 {
-    background-image: url(../img/4.webp);
-    background-size: cover;
-}
-
-.card__5 {
-    background-image: url(../img/5.webp);
-    background-size: cover;
-}
-
-.card__6 {
-    background-image: url(../img/6.webp);
-    background-size: cover;
-}
-
-
 
 
 /* FOOTER */
