@@ -13,6 +13,7 @@ body {
 a {
     text-decoration: none;
     color: white;
+    padding-right: 10px;
 }
 
 
@@ -42,7 +43,6 @@ a {
 
 .header__catalog {
     font-weight: bold;
-    word-spacing: 10px;
 }
 
 .header__logo {
@@ -55,7 +55,6 @@ a {
 
 .header__profile {
     text-align: right;
-    word-spacing: 10px;
 }
 
 
@@ -76,7 +75,7 @@ a {
 .card {
     width: calc((100% / 3) - 20px);
     min-height: 650px;
-    min-width: 370px;
+    min-width: 400px;
     margin-bottom: 80px;
     position: relative;
 }
@@ -149,6 +148,40 @@ a {
 
 /* FOOTER */
 
-.footer-container {
+footer {
     height: 100px;
+    background-color: #1A1A1A;
+}
+
+.footer-container {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.information {
+    width: 85%;
+}
+
+.socials {
+    width: 15%;
+}
+
+.information div {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.socials div {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.socials i {
+    font-size: 1.5rem;
+    padding-right: 5px;
 }
